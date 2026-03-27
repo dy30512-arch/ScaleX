@@ -1,0 +1,27 @@
+/* Custom properties and overrides */
+:root {
+    --primary: #0F172A;
+}
+
+body {
+    background-color: var(--primary);
+}
+
+/* Glassmorphism for Navbar on scroll */
+.nav-scrolled {
+    background: rgba(15, 23, 42, 0.9);
+    backdrop-filter: blur(10px);
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Custom Animation for buttons */
+.btn-pulse {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
