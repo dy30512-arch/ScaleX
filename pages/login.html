@@ -1,39 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <title>ScaleX | Admin Login</title>
-</head>
-<body class="bg-[#0F172A] text-white font-sans flex items-center justify-center min-h-screen">
+<script type="module">
+        // 1. Import Firebase Authentication tools
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-app.js";
+        import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-auth.js";
 
-    <div class="max-w-md w-full px-6">
-        <div class="bg-slate-900/50 p-8 rounded-3xl border border-white/10 shadow-2xl">
-            <h2 class="text-3xl font-bold mb-6 text-center">Admin <span class="text-blue-500">Login</span></h2>
+        // 2. Your specific ScaleX Firebase Configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyBH5AP4vEvjSh_Jo6z8tuesT8TRochWSvQ",
+            authDomain: "scalex-1805c.firebaseapp.com",
+            projectId: "scalex-1805c",
+            storageBucket: "scalex-1805c.firebasestorage.app",
+            messagingSenderId: "702635163606",
+            appId: "1:702635163606:web:02b922ed1a7b97bb4f2e77"
+        };
+
+        // 3. Initialize the connection to Google's servers
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+
+        // 4. Handle the Login Submission
+        document.getElementById('loginForm').addEventListener('submit', (e) => {
+            e.preventDefault();
             
-            <form id="loginForm" class="space-y-6">
-                <div>
-                    <label class="block text-sm font-medium text-gray-400 mb-2">Email Address</label>
-                    <input type="email" id="loginEmail" required class="w-full bg-slate-800 border border-slate-700 rounded-xl p-3 outline-none focus:ring-2 ring-blue-500" placeholder="admin@scalex.buzz">
-                </div>
-                <div>
-                    <label class="block text-sm font-medium text-gray-400 mb-2">Password</label>
-                    <input type="password" id="loginPassword" required class="w-full bg-slate-800 border border-slate-700 rounded-xl p-3 outline-none focus:ring-2 ring-blue-500" placeholder="••••••••">
-                </div>
-                <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-xl transition-all">
-                    Sign In
-                </button>
-            </form>
-            <div class="mt-6 text-center">
-                <a href="../index.html" class="text-sm text-gray-500 hover:text-white">← Back to Site</a>
-            </div>
-        </div>
-    </div>
+            const email = document.getElementById('loginEmail').value;
+            const password = document.getElementById('loginPassword').value;
 
-    <script type="module">
-        // Paste the Firebase Auth logic we discussed here!
+            signInWithEmailAndPassword(auth, email, password)
+              .then((userCredential) => {
+                // SUCCESS! Send them directly to the dashboard
+                window.location.href = "dashboard.html"; 
+              })
+              .catch((error) => {
+                // If wrong password or email, show an alert
+                alert("Login failed: " + error.message);
+              });
+        });
     </script>
-</body>
-</html>
