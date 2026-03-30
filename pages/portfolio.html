@@ -1,115 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScaleX | Portfolio & Case Studies</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <title>Portfolio & Case Studies | ScaleX</title>
 </head>
-<body class="bg-[#0F172A] text-white font-sans">
+<body class="bg-[#0F172A] font-sans text-white min-h-screen flex flex-col">
 
-    <div class="max-w-7xl mx-auto px-6 py-12">
-        <a href="../index.html" class="text-blue-400 hover:text-blue-300 mb-8 inline-flex items-center gap-2 transition-all">
-            <i class="fas fa-arrow-left"></i> Back to Home
-        </a>
-
-        <div class="mb-16">
-            <h1 class="text-5xl font-extrabold mb-4">Proven <span class="text-blue-500">Results.</span></h1>
-            <p class="text-gray-400 text-xl max-w-2xl">Don't just take our word for it. Explore how we've helped brands scale their revenue, traffic, and user base through data-driven execution.</p>
+    <nav class="border-b border-white/10 bg-slate-900/50 backdrop-blur-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="../index.html" class="text-xl font-bold">ScaleX <span class="text-blue-500">Digital</span></a>
+            <div class="hidden md:flex space-x-8 font-medium text-gray-300">
+                <a href="../index.html" class="hover:text-blue-400 transition-all">Home</a>
+                <a href="services.html" class="hover:text-blue-400 transition-all">Services</a>
+                <a href="portfolio.html" class="text-white border-b-2 border-blue-500 pb-1">Portfolio</a>
+                <a href="pricing.html" class="hover:text-blue-400 transition-all">Pricing</a>
+                <a href="login.html" class="hover:text-blue-500 transition-all">Client Portal</a>
+            </div>
+            <a href="contact.html" class="bg-blue-600 hover:bg-blue-700 px-5 py-2 rounded-lg font-bold transition-all text-sm">Start a Project</a>
         </div>
+    </nav>
 
-        <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-8">
+    <header class="pt-24 pb-16 px-6 text-center">
+        <h1 class="text-4xl md:text-6xl font-extrabold mb-6">Our <span class="text-blue-500">Work</span></h1>
+        <p class="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto">
+            We don't just build websites; we build digital experiences that drive growth. Explore our latest successful partnerships.
+        </p>
+    </header>
 
-            <div class="bg-slate-800/50 rounded-2xl border border-white/10 overflow-hidden hover:border-blue-500 transition-all group flex flex-col">
-                <div class="h-48 bg-gradient-to-br from-blue-900 to-slate-900 flex items-center justify-center relative overflow-hidden">
-                    <i class="fas fa-chart-line text-6xl text-blue-500/50 group-hover:scale-110 transition-transform duration-500"></i>
+    <main class="max-w-7xl mx-auto px-6 pb-24 flex-grow">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <div class="bg-slate-900/80 border border-white/10 rounded-2xl overflow-hidden group hover:border-blue-500/50 transition-all duration-300 flex flex-col">
+                <div class="h-64 bg-slate-800 relative overflow-hidden flex items-center justify-center">
+                    <div class="text-slate-600 text-6xl group-hover:scale-110 transition-transform duration-500"><i class="fas fa-graduation-cap"></i></div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent opacity-80"></div>
                 </div>
-                <div class="p-8 flex-1 flex flex-col">
-                    <div class="flex gap-2 mb-4 text-xs font-bold uppercase tracking-wider">
-                        <span class="bg-blue-600/20 text-blue-400 py-1 px-3 rounded-full">Google Ads</span>
-                        <span class="bg-purple-600/20 text-purple-400 py-1 px-3 rounded-full">CRO</span>
-                    </div>
-                    <h3 class="text-2xl font-bold mb-2">FinTech App Scaling</h3>
-                    <p class="text-gray-400 mb-6 flex-1">Completely restructured user acquisition campaigns for a rising finance app, drastically lowering their cost-per-acquisition.</p>
-                    <div class="grid grid-cols-2 gap-4 border-t border-white/10 pt-6 mb-6">
-                        <div>
-                            <div class="text-3xl font-bold text-white mb-1">300%</div>
-                            <div class="text-xs text-gray-500 uppercase">Lead Increase</div>
-                        </div>
-                        <div>
-                            <div class="text-3xl font-bold text-white mb-1">-45%</div>
-                            <div class="text-xs text-gray-500 uppercase">CPA Drop</div>
-                        </div>
-                    </div>
-                    <button class="w-full border border-white/20 hover:bg-white/10 text-white font-bold py-3 rounded-lg transition-all">Read Case Study</button>
+                <div class="p-8 flex-grow flex flex-col">
+                    <div class="text-xs font-bold text-blue-500 uppercase tracking-wider mb-2">Web Development & Data Integration</div>
+                    <h3 class="text-2xl font-bold mb-3">Seth M.R. Jaipuria School</h3>
+                    <p class="text-gray-400 mb-6 flex-grow">Designed and developed a comprehensive digital platform for the Babatpur Campus in Varanasi. Focused on streamlined data sourcing, intuitive navigation for parents, and a modern, trusted aesthetic.</p>
+                    <a href="#" class="inline-flex items-center text-blue-400 hover:text-blue-300 font-semibold transition-colors">
+                        View Case Study <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                    </a>
                 </div>
             </div>
 
-            <div class="bg-slate-800/50 rounded-2xl border border-white/10 overflow-hidden hover:border-purple-500 transition-all group flex flex-col">
-                <div class="h-48 bg-gradient-to-br from-purple-900 to-slate-900 flex items-center justify-center relative overflow-hidden">
-                    <i class="fas fa-laptop-code text-6xl text-purple-500/50 group-hover:scale-110 transition-transform duration-500"></i>
+            <div class="bg-slate-900/80 border border-white/10 rounded-2xl overflow-hidden group hover:border-blue-500/50 transition-all duration-300 flex flex-col">
+                <div class="h-64 bg-slate-800 relative overflow-hidden flex items-center justify-center">
+                    <div class="text-slate-600 text-6xl group-hover:scale-110 transition-transform duration-500"><i class="fas fa-mobile-alt"></i></div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent opacity-80"></div>
                 </div>
-                <div class="p-8 flex-1 flex flex-col">
-                    <div class="flex gap-2 mb-4 text-xs font-bold uppercase tracking-wider">
-                        <span class="bg-purple-600/20 text-purple-400 py-1 px-3 rounded-full">Web Dev</span>
-                        <span class="bg-green-600/20 text-green-400 py-1 px-3 rounded-full">SEO</span>
-                    </div>
-                    <h3 class="text-2xl font-bold mb-2">E-Commerce Rebuild</h3>
-                    <p class="text-gray-400 mb-6 flex-1">Migrated a legacy retail store to a modern, headless architecture, optimizing for lightning-fast speeds and search visibility.</p>
-                    <div class="grid grid-cols-2 gap-4 border-t border-white/10 pt-6 mb-6">
-                        <div>
-                            <div class="text-3xl font-bold text-white mb-1">2.5x</div>
-                            <div class="text-xs text-gray-500 uppercase">Organic Traffic</div>
-                        </div>
-                        <div>
-                            <div class="text-3xl font-bold text-white mb-1">< 1s</div>
-                            <div class="text-xs text-gray-500 uppercase">Load Time</div>
-                        </div>
-                    </div>
-                    <button class="w-full border border-white/20 hover:bg-white/10 text-white font-bold py-3 rounded-lg transition-all">Read Case Study</button>
+                <div class="p-8 flex-grow flex flex-col">
+                    <div class="text-xs font-bold text-purple-500 uppercase tracking-wider mb-2">Mobile UI/UX & App Dev</div>
+                    <h3 class="text-2xl font-bold mb-3">Fitness & Nutrition Tracker</h3>
+                    <p class="text-gray-400 mb-6 flex-grow">Architected a mobile application tailored for the fitness industry. The V1 launch centers on a frictionless user experience for granular meal tracking and automated daily calorie counting.</p>
+                    <a href="#" class="inline-flex items-center text-blue-400 hover:text-blue-300 font-semibold transition-colors">
+                        View Case Study <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                    </a>
                 </div>
             </div>
 
-            <div class="bg-slate-800/50 rounded-2xl border border-white/10 overflow-hidden hover:border-green-500 transition-all group flex flex-col">
-                <div class="h-48 bg-gradient-to-br from-green-900 to-slate-900 flex items-center justify-center relative overflow-hidden">
-                    <i class="fas fa-users text-6xl text-green-500/50 group-hover:scale-110 transition-transform duration-500"></i>
+            <div class="bg-slate-900/80 border border-white/10 rounded-2xl overflow-hidden group hover:border-blue-500/50 transition-all duration-300 flex flex-col">
+                <div class="h-64 bg-slate-800 relative overflow-hidden flex items-center justify-center">
+                    <div class="text-slate-600 text-6xl group-hover:scale-110 transition-transform duration-500"><i class="fas fa-shopping-cart"></i></div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent opacity-80"></div>
                 </div>
-                <div class="p-8 flex-1 flex flex-col">
-                    <div class="flex gap-2 mb-4 text-xs font-bold uppercase tracking-wider">
-                        <span class="bg-blue-600/20 text-blue-400 py-1 px-3 rounded-full">Social Ads</span>
-                        <span class="bg-pink-600/20 text-pink-400 py-1 px-3 rounded-full">Creative</span>
-                    </div>
-                    <h3 class="text-2xl font-bold mb-2">SaaS Global Launch</h3>
-                    <p class="text-gray-400 mb-6 flex-1">Executed a multi-channel digital launch strategy for a B2B software, maximizing sign-ups during their crucial first quarter.</p>
-                    <div class="grid grid-cols-2 gap-4 border-t border-white/10 pt-6 mb-6">
-                        <div>
-                            <div class="text-3xl font-bold text-white mb-1">10k+</div>
-                            <div class="text-xs text-gray-500 uppercase">New Users</div>
-                        </div>
-                        <div>
-                            <div class="text-3xl font-bold text-white mb-1">5.2x</div>
-                            <div class="text-xs text-gray-500 uppercase">ROAS</div>
-                        </div>
-                    </div>
-                    <button class="w-full border border-white/20 hover:bg-white/10 text-white font-bold py-3 rounded-lg transition-all">Read Case Study</button>
+                <div class="p-8 flex-grow flex flex-col">
+                    <div class="text-xs font-bold text-emerald-500 uppercase tracking-wider mb-2">E-Commerce Architecture</div>
+                    <h3 class="text-2xl font-bold mb-3">Global Retail Platform</h3>
+                    <p class="text-gray-400 mb-6 flex-grow">A high-performance e-commerce build featuring advanced inventory synchronization, secure payment gateway integration, and a mobile-first shopping experience optimized for high conversion rates.</p>
+                    <a href="#" class="inline-flex items-center text-blue-400 hover:text-blue-300 font-semibold transition-colors">
+                        View Case Study <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                    </a>
                 </div>
             </div>
 
         </div>
-        
-        <div class="mt-20 bg-gradient-to-r from-blue-900/40 to-purple-900/40 border border-white/10 rounded-3xl p-12 text-center">
-            <h2 class="text-3xl font-bold mb-4">Ready to be our next success story?</h2>
-            <p class="text-gray-400 mb-8 max-w-xl mx-auto">Let's audit your current digital presence and build a roadmap to hit your revenue goals.</p>
-            <a href="contact.html" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-xl transition-all shadow-lg shadow-blue-500/20">
-                Start Your Project
-            </a>
-        </div>
-    </div>
+    </main>
 
-    <footer class="py-12 border-t border-white/5 text-center text-gray-600 text-sm mt-12">
-        <p>© 2026 ScaleX Digital Solutions. Built for High-Performance Growth.</p>
+    <section class="border-t border-white/10 bg-slate-900/30 py-16 text-center px-6">
+        <h2 class="text-3xl font-bold mb-4">Ready to build something amazing?</h2>
+        <p class="text-gray-400 mb-8">Let's discuss how we can engineer growth for your brand.</p>
+        <a href="contact.html" class="bg-white text-slate-900 px-8 py-3 rounded-lg font-bold hover:bg-gray-200 transition-all">Book a Discovery Call</a>
+    </section>
+
+    <footer class="py-8 border-t border-white/10 text-center text-gray-500 text-sm">
+        <p>© 2026 ScaleX Digital. All rights reserved.</p>
     </footer>
 
-</body>
+    </body>
 </html>
