@@ -6,21 +6,20 @@
     <title>ScaleX | Digital Solutions for Growth</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="bg-primary font-sans text-white">
+<body class="bg-[#0F172A] font-sans text-white">
 
-    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-6">
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-6 bg-slate-900/50 backdrop-blur-md">
         <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
             <div class="text-2xl font-extrabold tracking-tighter">Scale<span class="text-blue-500">X</span></div>
             <div class="hidden md:flex space-x-8 font-medium text-gray-300">
                 <a href="index.html" class="hover:text-blue-400">Home</a>
                 <a href="pages/services.html" class="hover:text-blue-400">Services</a>
                 <a href="pages/portfolio.html" class="hover:text-blue-400">Portfolio</a>
-                <a href="pages/contact.html" class="hover:text-blue-400">Contact</a>
                 <a href="pages/pricing.html" class="hover:text-white">Pricing</a>
-                <a href="pages/about.html" class="hover:text-blue-400">About Us</a>
                 <a href="pages/login.html" class="text-gray-300 hover:text-blue-500 transition-all">Login</a>
             </div>
             <a href="pages/contact.html" class="bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-full font-bold transition-all">Get Started</a>
@@ -42,7 +41,7 @@
         </div>
     </section>
 
-    <section class="py-20 bg-slate-900/50">
+    <section class="py-20 bg-slate-900/30 border-y border-white/5">
         <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div><div class="text-4xl font-bold">100+</div><div class="text-gray-500 text-sm uppercase">Clients</div></div>
             <div><div class="text-4xl font-bold">300+</div><div class="text-gray-500 text-sm uppercase">Campaigns</div></div>
@@ -51,22 +50,50 @@
         </div>
     </section>
 
-    <footer class="py-12 border-t border-white/10 text-center text-gray-500">
-        <p>© 2026 ScaleX Digital. Based in India.</p>
-    </footer>
+    <section class="py-24 bg-[#0F172A]">
+        <div class="max-w-3xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold mb-4">Common <span class="text-blue-500">Questions</span></h2>
+                <p class="text-gray-400">Everything you need to know about partnering with ScaleX.</p>
+            </div>
 
-    <script src="script.js"></script>
+            <div class="space-y-4">
+                <div class="faq-item border border-white/10 rounded-xl bg-slate-900/50 overflow-hidden">
+                    <button class="w-full cursor-pointer flex justify-between items-center p-6 text-left hover:bg-white/5 transition-all" onclick="toggleFAQ(this)">
+                        <span class="font-bold text-lg">How long does a typical project take?</span>
+                        <i class="fas fa-chevron-down text-blue-500 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-slate-900/80">
+                        <p class="p-6 text-gray-400 leading-relaxed border-t border-white/5">
+                            Standard agency sites take 2–4 weeks. Custom projects like the Jaipuria School platform or fitness apps take 6–10 weeks.
+                        </p>
+                    </div>
+                </div>
 
-    <script type="text/javascript">
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-    (function(){
-    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-    s1.async=true;
-    s1.src='https://embed.tawk.to/69c9f238f794ab1c39484c50/1jkudkcg2';
-    s1.charset='UTF-8';
-    s1.setAttribute('crossorigin','*');
-    s0.parentNode.insertBefore(s1,s0);
-    })();
-    </script>
-    </body>
-</html>
+                <div class="faq-item border border-white/10 rounded-xl bg-slate-900/50 overflow-hidden">
+                    <button class="w-full cursor-pointer flex justify-between items-center p-6 text-left hover:bg-white/5 transition-all" onclick="toggleFAQ(this)">
+                        <span class="font-bold text-lg">Can I track my project's progress?</span>
+                        <i class="fas fa-chevron-down text-blue-500 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-slate-900/80">
+                        <p class="p-6 text-gray-400 leading-relaxed border-t border-white/5">
+                            Yes! Every client gets a private Login to our Portal where you can see real-time milestones and handle billing.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 border-t border-white/10 bg-slate-900/20">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <div class="mb-8">
+                <div class="text-xl font-bold mb-4">Scale<span class="text-blue-500">X</span> Digital</div>
+                <div class="flex flex-wrap justify-center gap-6 text-sm text-gray-500">
+                    <a href="pages/privacy.html" class="hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="pages/terms.html" class="hover:text-white transition-colors">Terms & Conditions</a>
+                    <a href="pages/refunds.html" class="hover:text-white transition-colors">Refund Policy</a>
+                    <a href="pages/contact.html" class="hover:text-white transition-colors">Contact Us</a>
+                </div>
+            </div>
+            <p class="text-gray-600 text-xs">© 2026 ScaleX Digital Solutions. Based in India
