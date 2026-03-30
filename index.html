@@ -43,10 +43,10 @@
 
     <section class="py-20 bg-slate-900/30 border-y border-white/5">
         <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            <div><div class="text-4xl font-bold">100+</div><div class="text-gray-500 text-sm uppercase">Clients</div></div>
-            <div><div class="text-4xl font-bold">300+</div><div class="text-gray-500 text-sm uppercase">Campaigns</div></div>
-            <div><div class="text-4xl font-bold">95%</div><div class="text-gray-500 text-sm uppercase">Satisfaction</div></div>
-            <div><div class="text-4xl font-bold">4.8x</div><div class="text-gray-500 text-sm uppercase">Avg ROI</div></div>
+            <div><div class="text-4xl font-bold">100+</div><div class="text-gray-500 text-sm uppercase tracking-widest">Clients</div></div>
+            <div><div class="text-4xl font-bold">300+</div><div class="text-gray-500 text-sm uppercase tracking-widest">Campaigns</div></div>
+            <div><div class="text-4xl font-bold">95%</div><div class="text-gray-500 text-sm uppercase tracking-widest">Satisfaction</div></div>
+            <div><div class="text-4xl font-bold">4.8x</div><div class="text-gray-500 text-sm uppercase tracking-widest">Avg ROI</div></div>
         </div>
     </section>
 
@@ -82,18 +82,54 @@
                     </div>
                 </div>
             </div>
+            <div class="text-center mt-10">
+                <a href="pages/faq.html" class="text-blue-400 hover:text-blue-300 font-semibold">View All FAQs →</a>
+            </div>
         </div>
     </section>
 
     <footer class="py-12 border-t border-white/10 bg-slate-900/20">
         <div class="max-w-7xl mx-auto px-6 text-center">
-            <div class="mb-8">
+            <div class="mb-8 text-center">
                 <div class="text-xl font-bold mb-4">Scale<span class="text-blue-500">X</span> Digital</div>
                 <div class="flex flex-wrap justify-center gap-6 text-sm text-gray-500">
                     <a href="pages/privacy.html" class="hover:text-white transition-colors">Privacy Policy</a>
                     <a href="pages/terms.html" class="hover:text-white transition-colors">Terms & Conditions</a>
                     <a href="pages/refunds.html" class="hover:text-white transition-colors">Refund Policy</a>
+                    <a href="pages/faq.html" class="hover:text-white transition-colors">FAQ</a>
                     <a href="pages/contact.html" class="hover:text-white transition-colors">Contact Us</a>
                 </div>
             </div>
-            <p class="text-gray-600 text-xs">© 2026 ScaleX Digital Solutions. Based in India
+            <p class="text-gray-600 text-xs">© 2026 ScaleX Digital Solutions. Based in India. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleFAQ(btn) {
+            const answer = btn.nextElementSibling;
+            const icon = btn.querySelector('i');
+            if (answer.style.maxHeight) {
+                answer.style.maxHeight = null;
+                icon.style.transform = 'rotate(0deg)';
+            } else {
+                document.querySelectorAll('.faq-answer').forEach(el => el.style.maxHeight = null);
+                document.querySelectorAll('.faq-item i').forEach(el => el.style.transform = 'rotate(0deg)');
+                answer.style.maxHeight = answer.scrollHeight + "px";
+                icon.style.transform = 'rotate(180deg)';
+            }
+        }
+    </script>
+
+    <script type="text/javascript">
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/69c9f238f794ab1c39484c50/1jkudkcg2';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+        })();
+    </script>
+</body>
+</html>
