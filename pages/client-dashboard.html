@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScaleX | Client Portal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-[#0F172A] text-white font-sans min-h-screen flex flex-col">
+
+    <nav class="border-b border-white/10 bg-slate-900/80 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-xl font-bold">ScaleX <span class="text-blue-500">Portal</span></div>
+            <div class="flex items-center gap-4">
+                <span class="text-sm text-gray-400 hidden md:block">Logged in as Client</span>
+                <button id="logoutBtn" class="text-sm bg-red-500/10 text-red-400 border border-red-500/50 px-4 py-2 rounded-lg hover:bg-red-500 hover:text-white transition-all">Sign Out</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-6 py-12 w-full flex-grow">
+        
+        <header class="mb-10">
+            <h1 class="text-3xl font-bold mb-2">Welcome back, FitTech Team! 👋</h1>
+            <p class="text-gray-400">Here is the latest status on your digital products.</p>
+        </header>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            
+            <div class="lg:col-span-2 space-y-8">
+                
+                <div class="bg-slate-900 border border-white/10 rounded-2xl p-8">
+                    <div class="flex justify-between items-start mb-6">
+                        <div>
+                            <div class="text-xs font-bold text-blue-500 uppercase tracking-wider mb-1">Active Project</div>
+                            <h2 class="text-2xl font-bold">Fitness Mobile Application</h2>
+                        </div>
+                        <span class="bg-blue-500/20 text-blue-400 px-3 py-1 rounded-full text-sm font-semibold border border-blue-500/30">In Progress</span>
+                    </div>
+
+                    <div class="mb-8">
+                        <div class="flex justify-between text-sm mb-2">
+                            <span class="text-gray-400">Development Phase V1</span>
+                            <span class="text-white font-bold">65%</span>
+                        </div>
+                        <div class="w-full bg-slate-800 rounded-full h-3">
+                            <div class="bg-gradient-to-r from-blue-600 to-blue-400 h-3 rounded-full" style="width: 65%"></div>
+                        </div>
+                    </div>
+
+                    <h3 class="text-sm font-bold text-gray-500 uppercase mb-4">Latest Milestones</h3>
+                    <div class="space-y-4 border-l-2 border-slate-800 ml-3 pl-4">
+                        <div class="relative">
+                            <div class="absolute -left-[23px] top-1 h-3 w-3 bg-blue-500 rounded-full border-2 border-[#0F172A]"></div>
+                            <p class="text-sm font-bold">Core Modules Integrated</p>
+                            <p class="text-xs text-gray-400 mt-1">Meal tracking logic and calorie counting database have been successfully synced.</p>
+                        </div>
+                        <div class="relative">
+                            <div class="absolute -left-[23px] top-1 h-3 w-3 bg-blue-500 rounded-full border-2 border-[#0F172A]"></div>
+                            <p class="text-sm font-bold">UI/UX Wireframes Approved</p>
+                            <p class="text-xs text-gray-400 mt-1">Workout plan dashboard layouts finalized by the design team.</p>
+                        </div>
+                        <div class="relative opacity-50">
+                            <div class="absolute -left-[23px] top-1 h-3 w-3 bg-slate-600 rounded-full border-2 border-[#0F172A]"></div>
+                            <p class="text-sm font-bold">Pending: Step Counter API Integration</p>
+                            <p class="text-xs text-gray-400 mt-1">Scheduled for next week's sprint.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="space-y-8">
+                
+                <div class="bg-slate-900 border border-white/10 rounded-2xl p-6">
+                    <h3 class="text-lg font-bold mb-4 border-b border-white/10 pb-2"><i class="fas fa-link text-blue-500 mr-2"></i> Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="#" class="flex items-center p-3 rounded-lg hover:bg-slate-800 transition-colors group">
+                                <div class="bg-slate-800 group-hover:bg-slate-700 p-2 rounded text-purple-500 mr-3 transition-colors"><i class="fab fa-figma"></i></div>
+                                <div>
+                                    <div class="text-sm font-bold text-white group-hover:text-blue-400 transition-colors">Design Prototypes</div>
+                                    <div class="text-xs text-gray-500">View latest screens</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex items-center p-3 rounded-lg hover:bg-slate-800 transition-colors group">
+                                <div class="bg-slate-800 group-hover:bg-slate-700 p-2 rounded text-emerald-500 mr-3 transition-colors"><i class="fas fa-play"></i></div>
+                                <div>
+                                    <div class="text-sm font-bold text-white group-hover:text-blue-400 transition-colors">Staging App</div>
+                                    <div class="text-xs text-gray-500">Test the live build</div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-slate-800 border-2 border-blue-500/30 rounded-2xl p-6 shadow-lg shadow-blue-500/5">
+                    <h3 class="text-lg font-bold mb-4 border-b border-white/10 pb-2"><i class="fas fa-file-invoice-dollar text-blue-500 mr-2"></i> Billing</h3>
+                    <div class="mb-4">
+                        <div class="text-xs text-gray-400 uppercase tracking-wider mb-1">Next Milestone Payment</div>
+                        <div class="text-3xl font-extrabold text-white">$1,500</div>
+                        <div class="text-xs text-red-400 mt-1"><i class="fas fa-clock mr-1"></i> Due in 5 days</div>
+                    </div>
+                    
+                    <button class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-xl transition-all shadow-md shadow-blue-600/20">
+                        Pay Invoice
+                    </button>
+                    
+                    <div class="mt-4 pt-4 border-t border-white/10 text-xs text-gray-400 flex justify-between">
+                        <span>Invoice #INV-2026-04</span>
+                        <a href="#" class="text-blue-400 hover:underline">Download PDF</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
